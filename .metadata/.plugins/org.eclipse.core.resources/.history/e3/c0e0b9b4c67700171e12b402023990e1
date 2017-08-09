@@ -1,0 +1,39 @@
+package parenthesisMatch;
+import java.util.*;
+public class parmatcher {
+	public int mismatch(String s)
+	{
+	int count = 0;
+	char[] arr = s.toCharArray();
+	Stack<Character> stack = new Stack<Character>();
+	for(char all: arr)
+	{
+		switch (all)
+		{
+		case '(':
+			count++;
+			stack.push('(');
+		case ')':
+			if(count==0)
+			{
+				stack.push('(');
+				count++;
+			}
+			else
+				{
+				stack.push(')');
+			    count--;
+		}
+			
+		}
+	}
+	
+	return count;
+	}
+	public static void main(String[] args)
+	{
+		String s = "()))";
+		parmatcher obj = new parmatcher();
+		System.out.print(obj.mismatch(s));
+	}
+}

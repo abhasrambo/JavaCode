@@ -1,0 +1,14 @@
+ enum test{
+	IIT,
+	GRE,
+	TOEFL,
+	ILETS
+};
+public class enumLearn {
+public test name;
+
+public enumLearn(test name)
+{
+	this.name = name;
+}
+}

@@ -1,0 +1,13 @@
+package stringSearch;
+
+import java.util.Scanner;
+
+public class search {
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);	
+String str = sc.nextLine();
+str.toString[]();
+str = str.split("\\s");
+}
+}

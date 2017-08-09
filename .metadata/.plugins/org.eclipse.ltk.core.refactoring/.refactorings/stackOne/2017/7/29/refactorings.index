@@ -1,0 +1,3 @@
+1500597820254	Convert local variable 'sc' to field
+1500597834002	Encapsulate field 'sc'
+1500618145746	Convert local variable 'obj' to field

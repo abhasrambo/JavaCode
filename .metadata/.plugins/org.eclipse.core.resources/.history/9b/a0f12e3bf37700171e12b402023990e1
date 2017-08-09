@@ -1,0 +1,32 @@
+package stringLength;
+
+public class strlen {
+public int countdiff(String sOne, String sTwo)
+{	
+	char[] chOne = sOne.toCharArray();
+	char[] chTwo = sTwo.toCharArray();
+	int ascii = 0;
+	for(int i = 0; i<chOne.length; i++)
+	{
+		for(int j = 0; j<chTwo.length; j++)
+		{
+			if(chOne[i]!=chTwo[j])
+			{
+				ascii+= (int)chOne[i];
+			}
+		}
+	}
+	for(int i = 0; i<chTwo.length; i++)
+	{
+		for(int j = 0; j<chOne.length; j++)
+		{
+			if(chTwo[i]!=chOne[j])
+			{
+				ascii+= (int)chTwo[i];
+			}
+		}
+	}
+	return ascii;
+	
+}
+}
