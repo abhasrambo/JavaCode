@@ -1,9 +1,0 @@
-public enum test{
-	IIT,
-	GRE,
-	TOEFL,
-	ILETS
-};
-public class enumLearn {
-
-}

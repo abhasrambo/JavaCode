@@ -15,7 +15,7 @@ public static void main(String[] args)
 	int count[] = {9,2,3,3,4,5};
 	Set<Integer> set = new HashSet<Integer>();
 	try{
-		for(int i = 0; i<count.length;i++)
+		for(int i = 0; i<count.length ; i++)
 		{
 			set.add(count[i]);
 		}
